@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["http://localhost:5173", "talaverasalf-production.up.railway.app", "http://0.0.0.0:5678"]
+ALLOWED_HOSTS = ["http://localhost:5173", "talaverasalf-production.up.railway.app", "http://0.0.0.0:5678","https://talaverasalf-production.up.railway.ap"]
 
 
 # Application definition
