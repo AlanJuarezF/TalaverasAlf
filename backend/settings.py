@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["http://localhost:5173", "talaverasalf-production.up.railway.app", "http://0.0.0.0:5678","https://talaverasalf-production.up.railway.ap"]
+ALLOWED_HOSTS = ['http://localhost:5173', 'talaverasalf-production.up.railway.app', 'http://0.0.0.0:5678','https://talaverasalf-production.up.railway.ap']
 
 
 # Application definition
@@ -163,6 +163,16 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
+
+CSRF_COOKIE_DOMAIN = 'up.railway.app'
+CSRF_TRUSTED_ORIGINS = ['https://talaverasalf-production.up.railway.app', 'http://localhost:5173', 'http://0.0.0.0:5678']
+CORS_REPLACE_HTTPS_REFERER = True
+CORS_ORIGIN_WHITELIST = (
+    'https://talaverasalf-production.up.railway.app',
+    'https://talaverasalf-production.up.railway.app',
+    'up.railway.app',
+)
+
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=50),
