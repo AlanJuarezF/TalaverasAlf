@@ -142,11 +142,11 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STORAGES = {
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+# STORAGES = {
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#     },
+# }
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -160,6 +160,7 @@ AUTH_USER_MODEL = "users.User"
 
 CORS_ALLOWED_ORIGINS = [
         'http://localhost:5173'
+        'https://talaverasalf-production.up.railway.app'
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
