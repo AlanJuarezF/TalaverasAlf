@@ -159,8 +159,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "users.User"
 
 CORS_ALLOWED_ORIGINS = [
-        'http://localhost:5173'
-        'https://talaverasalf-production.up.railway.app'
+        'http://localhost:5173',
+        'https://talaverasalf-production.up.railway.app',
+        'http://0.0.0.0:5678',
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
