@@ -173,6 +173,7 @@ CORS_ORIGIN_WHITELIST = (
     'https://talaverasalf-production.up.railway.app',
     'https://talaverasalf-production.up.railway.app',
     'up.railway.app',
+    'http://localhost:5173',
 )
 
 
